@@ -25,7 +25,6 @@ export function PokemonProvider({ children }) {
     });
 
     const results = await Promise.all(promises);
-    console.log(results);
     setAllPokemons([...allPokemons, ...results]);
   };
 
@@ -40,7 +39,6 @@ export function PokemonProvider({ children }) {
     });
 
     const results = await Promise.all(promises);
-    console.log(results);
     setGlobalPokemons([...globalPokemons, ...results]);
   };
 
@@ -50,7 +48,6 @@ export function PokemonProvider({ children }) {
 
   const showMore = () => {
     setOffset(offset + 10);
-    console.log(offset);
   };
 
   const getRandomPokemon = (min, max) => {
