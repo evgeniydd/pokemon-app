@@ -1,0 +1,31 @@
+.progress_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 10px;
+}
+.progress_title {
+  width: 100px;
+}
+.progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0;
+  height: 10px;
+  width: 400px;
+}
+
+.progress_done {
+  background: rgb(18, 193, 172);
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  max-width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}

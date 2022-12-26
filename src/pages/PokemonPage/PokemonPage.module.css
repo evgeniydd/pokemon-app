@@ -1,0 +1,59 @@
+.card_front {
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+.card_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 20px;
+}
+.card_nav h2 {
+  text-transform: capitalize;
+  font-size: 34px;
+}
+
+.pokemon_img {
+  max-width: 330px;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+}
+.pokemon_tabs {
+  padding: 100px 15px 0;
+  background-color: #fff;
+  border-radius: 14px 14px 0 0;
+}
+
+.stats_titles {
+  display: flex;
+  justify-content: space-around;
+}
+.stats_titles li {
+  list-style: none;
+  cursor: pointer;
+}
+.active {
+  color: rgb(18, 193, 172);
+  font-weight: bold;
+}
+.stats_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card_front {
+  flex: 3;
+}
+
+.pokemon_tabs {
+  flex: 3;
+}
+
+.card_back,
+.card_fav {
+  cursor: pointer;
+}

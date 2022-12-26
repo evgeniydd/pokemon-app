@@ -1,0 +1,40 @@
+.header_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.header_title {
+  font-size: 26px;
+}
+.burger_menu {
+  font-size: 18px;
+  cursor: pointer;
+}
+.search_input {
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.search_input input {
+  border: 0;
+  outline: none;
+  padding: 5px;
+  flex: 2;
+}
+.search_icon {
+  color: rgba(0, 0, 0, 0.3);
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.options_btn {
+  cursor: pointer;
+  font-size: 26px;
+}

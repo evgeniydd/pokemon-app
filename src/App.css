@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #e2ebf1;
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bug {
+  background: linear-gradient(94deg, rgba(166, 185, 26, 1) 0%, rgba(218, 238, 65, 1) 100%);
+}
+.bugBg {
+  background: linear-gradient(94deg, rgba(166, 185, 26, 1) 0%, rgba(218, 238, 65, 1) 53%, rgba(166, 185, 26, 1) 100%);
+}
+.dragon {
+  background: linear-gradient(94deg, rgba(111, 53, 252, 1) 0%, rgba(128, 202, 238, 1) 100%);
+}
+.dragonBg {
+  background: linear-gradient(94deg, rgba(111, 53, 252, 1) 0%, rgba(128, 202, 238, 1) 53%, rgba(111, 53, 252, 1) 100%);
+}
+.dark {
+  background: linear-gradient(94deg, rgba(112, 87, 70, 1) 0%, rgba(161, 144, 133, 1) 100%);
+}
+.darkBg {
+  background: linear-gradient(94deg, rgba(112, 87, 70, 1) 0%, rgba(161, 144, 133, 1) 53%, rgba(112, 87, 70, 1) 100%);
+}
+.electric {
+  background: linear-gradient(129deg, rgba(247, 143, 21, 1) 0%, rgba(253, 211, 137, 1) 100%);
+}
+.electricBg {
+  background: linear-gradient(94deg, rgba(247, 143, 21, 1) 0%, rgba(253, 211, 137, 1) 53%, rgba(247, 143, 21, 1) 100%);
+}
+.fairy {
+  background: linear-gradient(129deg, rgba(214, 133, 173, 1) 0%, rgba(231, 218, 188, 1) 100%);
+}
+.fairyBg {
+  background: linear-gradient(94deg, rgba(214, 133, 173, 1) 0%, rgba(231, 218, 188, 1) 53%, rgba(214, 133, 173, 1) 100%);
+}
+.flying {
+  background: linear-gradient(129deg, rgba(129, 95, 226, 1) 0%, rgba(193, 170, 255, 1) 100%);
+}
+.flyingBg {
+  background: linear-gradient(94deg, rgba(129, 95, 226, 1) 0%, rgba(193, 170, 255, 1) 53%, rgba(129, 95, 226, 1) 100%);
+}
+.fire {
+  background: linear-gradient(129deg, rgba(241, 95, 42, 1) 0%, rgba(244, 155, 104, 1) 100%);
+}
+.fireBg {
+  background: linear-gradient(94deg, rgba(241, 95, 42, 1) 0%, rgba(244, 155, 104, 1) 53%, rgba(241, 95, 42, 1) 100%);
+}
+.fighting {
+  background: linear-gradient(94deg, rgba(194, 46, 40, 1) 0%, rgba(130, 100, 99, 1) 100%);
+}
+.fightingBg {
+  background: linear-gradient(94deg, rgba(194, 46, 40, 1) 0%, rgba(130, 100, 99, 1) 53%, rgba(194, 46, 40, 1) 100%);
+}
+.grass {
+  background: linear-gradient(129deg, rgba(18, 193, 172, 1) 0%, rgba(174, 230, 185, 1) 100%);
+}
+.grassBg {
+  background: linear-gradient(94deg, rgba(39, 198, 174, 1) 0%, rgba(166, 228, 184, 1) 53%, rgba(39, 198, 174, 1) 100%);
+}
+
+.ground {
+  background: linear-gradient(129deg, rgba(176, 141, 51, 1) 0%, rgba(250, 206, 93, 1) 100%);
+}
+.groundBg {
+  background: linear-gradient(94deg, rgba(176, 141, 51, 1) 0%, rgba(250, 206, 93, 1) 53%, rgba(176, 141, 51, 1) 100%);
+}
+.ghost {
+  background: linear-gradient(94deg, rgba(115, 87, 151, 1) 0%, rgba(182, 142, 233, 1) 100%);
+}
+.ghostBg {
+  background: linear-gradient(94deg, rgba(115, 87, 151, 1) 0%, rgba(182, 142, 233, 1) 53%, rgba(115, 87, 151, 1) 100%);
+}
+.ice {
+  background: linear-gradient(94deg, rgba(115, 215, 211, 1) 0%, rgba(177, 249, 245, 1) 100%);
+}
+.iceBg {
+  background: linear-gradient(94deg, rgba(115, 215, 211, 1) 0%, rgba(177, 249, 245, 1) 53%, rgba(115, 215, 211, 1) 100%);
+}
+.normal {
+  background: linear-gradient(94deg, rgba(168, 167, 122, 1) 0%, rgba(218, 217, 159, 1) 100%);
+}
+.normalBg {
+  background: linear-gradient(94deg, rgba(168, 167, 122, 1) 0%, rgba(218, 217, 159, 1) 53%, rgba(168, 167, 122, 1) 100%);
+}
+.poison {
+  background: linear-gradient(94deg, rgba(173, 59, 171, 1) 0%, rgba(181, 163, 181, 1) 100%);
+}
+.poisonBg {
+  background: linear-gradient(94deg, rgba(173, 59, 171, 1) 0%, rgba(181, 163, 181, 1) 53%, rgba(173, 59, 171, 1) 100%);
+}
+.psychic {
+  background: linear-gradient(94deg, rgba(249, 85, 135, 1) 0%, rgba(129, 37, 65, 1) 100%);
+}
+.psychicBg {
+  background: linear-gradient(94deg, rgba(129, 37, 65, 1) 0%, rgba(249, 85, 135, 1) 53%, rgba(129, 37, 65, 1) 100%);
+}
+.rock {
+  background: linear-gradient(94deg, rgba(148, 81, 81, 1) 0%, rgba(166, 120, 47, 1) 100%);
+}
+.rockBg {
+  background: linear-gradient(94deg, rgba(148, 81, 81, 1) 0%, rgba(166, 120, 47, 1) 53%, rgba(148, 81, 81, 1) 100%);
+}
+.steel {
+  background: linear-gradient(94deg, rgba(183, 183, 206, 1) 0%, rgba(222, 222, 255, 1) 100%);
+}
+.steelBg {
+  background: linear-gradient(94deg, rgba(183, 183, 206, 1) 0%, rgba(222, 222, 255, 1) 53%, rgba(183, 183, 206, 1) 100%);
+}
+.water {
+  background: linear-gradient(129deg, rgba(46, 202, 248, 1) 0%, rgba(231, 218, 188, 1) 100%);
+}
+.waterBg {
+  background: linear-gradient(94deg, rgba(46, 202, 248, 1) 0%, rgba(231, 218, 188, 1) 53%, rgba(46, 202, 248, 1) 100%);
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #fff;
+  width: 100%;
+}
+.spinner img {
+  max-width: 50px;
+}
+
+header {
+  background-color: #77a7c1;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  border-radius: 0 0 15px 15px;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 5px;
+  height: 50px;
+}
+::-webkit-scrollbar {
+  background: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+.pokemon_card {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
