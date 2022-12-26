@@ -16,7 +16,7 @@ const PokemonPage = () => {
         <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }} className={theme}>
           <div className={styles.card_front}>
             <div className={styles.card_nav}>
-              <Link to={'/'}>
+              <Link to={'/pokemon-app'}>
                 <FontAwesomeIcon className={styles.card_back} icon={faChevronLeft} />
               </Link>
               <h2>{pokem?.name}</h2>

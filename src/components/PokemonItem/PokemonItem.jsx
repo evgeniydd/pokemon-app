@@ -19,7 +19,7 @@ const PokemonItem = ({ id, name, img, type }) => {
   }
 
   return (
-    <Link to='/pokemon'>
+    <Link to='/pokemon-app/pokemon'>
       <div onClick={() => getItem(id, type)}>
         <div className={style}>
           <div className={styles.pokemon_item_left}>
