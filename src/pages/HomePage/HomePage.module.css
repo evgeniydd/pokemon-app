@@ -38,3 +38,15 @@
   cursor: pointer;
   font-size: 26px;
 }
+
+.navbar {
+  position: absolute;
+  bottom: 33px;
+  left: 19px;
+  width: 91%;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 14px 0;
+  border-radius: 24px;
+}

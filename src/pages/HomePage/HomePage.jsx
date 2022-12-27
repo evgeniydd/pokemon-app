@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './HomePage.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faBars, faShuffle, faRotateRight } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass, faBars, faShuffle, faRotateRight, faAnglesDown } from '@fortawesome/free-solid-svg-icons';
 import { useContext } from 'react';
 import { PokemonContext } from '../../context/PokemonContext';
 import PokemonList from '../../components/PokemonList/PokemonList';
 
 const HomePage = () => {
-  const { searchTerm, searchPokemon, getRandomPokemon, getReload } = useContext(PokemonContext);
+  const { searchTerm, searchPokemon, getRandomPokemon, getReload, showMore } = useContext(PokemonContext);
   return (
     <div className='app'>
       <div className='app-container'>
@@ -37,6 +37,9 @@ const HomePage = () => {
           </header>
 
           <PokemonList />
+          <div onClick={showMore} className={styles.navbar} style={{ cursor: 'pointer' }}>
+            <FontAwesomeIcon style={{ color: 'gray' }} icon={faAnglesDown} />
+          </div>
         </div>
       </div>
     </div>

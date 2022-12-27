@@ -5,7 +5,7 @@ import { PokemonContext } from '../../context/PokemonContext';
 import { useContext } from 'react';
 
 const PokemonList = () => {
-  const { searchTerm, allPokemons, globalPokemons, showMore, getRandomPokemon } = useContext(PokemonContext);
+  const { searchTerm, allPokemons, globalPokemons } = useContext(PokemonContext);
   return (
     <div className={styles.pokemon_list}>
       {searchTerm != ''
@@ -35,8 +35,6 @@ const PokemonList = () => {
               img={pokemon.sprites.other['official-artwork'].front_default}
             />
           ))}
-
-      <button onClick={showMore}>Show more</button>
     </div>
   );
 };

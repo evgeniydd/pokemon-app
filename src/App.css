@@ -134,6 +134,7 @@ a {
   margin: auto;
   background-color: #fff;
   width: 100%;
+  position: relative;
 }
 .spinner img {
   max-width: 50px;
